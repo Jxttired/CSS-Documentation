@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical-Documentation-Page</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+ 
+    <div class="container">
+          
+          <nav id="navbar">
+      <header>CSS DOCUMENTION</header>
+                    <ul class="no-bullets"> 
+      <li> <a href="#introduction" class="nav-link">Introduction</a> </li>
+      <li> <a href="#why_use_css" class="nav-link">Why Use CSS?</a> </li>
+      <li> <a href="#how_to_add_css" class="nav-link">How To Add CSS</a> </li>
+      <li> <a href="#syntax" class="nav-link">Syntax</a> </li>
+      <li> <a href="#selectors" class="nav-link">Selectors</a> </li>
+      <li> <a href="#grid" class="nav-link">Grid</a> </li>
+      <li> <a href="#comments" class="nav-link">Comments</a> </li>
+      <li> <a href="#flexbox" class="nav-link">Flexbox</a> </li>
+      <li> <a href="#reference" class="nav-link">Reference</a> </li>
+                  </ul>
+                 </nav>
+        <main id="main-doc">
+            <div id="main-section">
+      <section class="main-section" id="introduction">
+        <header>Introduction </header>
+        <p>CSS is the language we use to style a Web page</p>
+        <h2>What is CSS?</h2>
+        <li>CSS stands for Cascading Style Sheets</li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+        <li>External stylesheets are stored in CSS files</li>
+      </section>
+
+      <section class="main-section" id="why_use_css">
+        <header>Why Use CSS?</header>
+        <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+         <h2>CSS Solved a Big Problem:</h2>
+         <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+         <p>HTML was created to describe the content of a web page, like:</p>
+         <p><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></p>
+         <p><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></p>
+         <p>When tags like <code>&lt;font&gt;,</code> and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+         <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+         <p>CSS removed the style formatting from the HTML page!</p>
+      </section>
+
+      <section class="main-section" id="how_to_add_css">
+       <header>How To Add CSS</header>
+        <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+        <h2>Three Ways to Insert CSS:</h2>
+        <p>There are three ways of inserting a style sheet:</p>
+        <code></code>
+        <ul>
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+        <li>Inline CSS</li>
+        </ul>
+        <h3> External CSS: </h3>
+        <p>With an external style sheet, you can change the look of an entire website by changing just one file! Each HTML page must include a reference to the external style sheet file inside the <code>&lt;link&gt;</code> element, inside the head section.</p>
+        <h3>Internal CSS:</h3>
+        <p>An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the<code> &lt;style&gt;</code> element, inside the head section.</p>
+        <h3>Inline CSS:</h3>
+        <p>An inline style may be used to apply a unique style for a single element. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+      </section>
+
+      <section class="main-section" id="syntax">
+        <header>Syntax</header>
+        <p>A CSS rule consists of a selector and a declaration block.</p>
+        <img src="https://www.w3schools.com/css/img_selector.gif">
+        <p>The selector points to the HTML element you want to style.</p>
+        <p>The declaration block contains one or more declarations separated by semicolons.</p>
+        <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+        <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+        <code></code>
+      </section>
+
+     <section class="main-section" id="selectors">
+        <header>Selectors</header>
+        <p>A CSS selector selects the HTML element(s) you want to style.</p>
+        <h2>CSS Selectors:</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
+        <code></code>
+        <li>Simple selectors (select elements based on name, id, class)</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+     </section>
+
+     <section class="main-section" id="grid">
+        <header>Grid</header>
+        <h2>CSS Grid Layout:</h2>
+        <p>The Grid Layout Module offers a grid-based layout system, with rows and columns.</p>
+        <p>The Grid Layout Module allows developers to easily create complex web layouts.</p>
+        <p>The Grid Layout Module makes it easier to design a responsive layout structure, without using float or positioning.</p>
+        <p>The CSS grid properties are supported in all modern browsers.</p>
+        <h2>CSS Grid Components</h2>
+        <p>A grid always consists of:</p>
+        <code></code>
+        <li>a Grid Container - the parent (container) <code>&lt;div&gt;</code> element</li>
+        <li>Grid Items - the items inside the container <code>&lt;div&gt;</code></li>
+      </section>
+
+      <section class="main-section" id="comments">
+        <header>Comments</header>
+        <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+        <h2>CSS Comments:</h2>
+        <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+        <p>Comments are ignored by browsers.</p>
+        <p>A CSS comment is placed inside the<code> &lt;style&gt; </code>element, and starts with /* and ends with */:</p>
+        <h2>HTML and CSS Comments:</h2>
+        <p>From the HTML tutorial, you learned that you can add comments to your HTML source by using the <code>&lt;!--...--&gt;</code> syntax.</p>
+        <p>In the following example, we use a combination of HTML and CSS comments:</p>
+      
+      </section>
+
+      <section class="main-section" id="flexbox">
+        <header>Flexbox</header>
+        <h2>What is CSS Flexbox?</h2>
+        <p>Flexbox is short for the Flexible Box Layout module.</p>
+        <p>Flexbox is a layout method for arranging items in rows or columns.</p>
+        <p>Flexbox makes it easier to design a flexible responsive layout structure, without using float or positioning.</p>
+        <h2>CSS Flexible Box Layout Module:</h2>
+        <p>Before the Flexible Box Layout module, there were four layout modes:</p>
+        <p>CSS flexbox is supported in all modern browsers.</p>
+        <li>Block, for sections in a webpage</li>
+        <li>Inline, for text</li>
+        <li>Table, for two-dimensional table data</li>
+        <li>Positioned, for explicit position of an element</li>
+        <h2>CSS Flexbox Components:</h2>
+        <p>A flexbox always consists of;</p>
+        <li>a Flex Container - the parent (container) <code>&lt;div&gt;</code> element</li>
+        <li>Flex Items - the items inside the container <code>&lt;div&gt;</code> </li>
+      </section>
+      
+      <section class="main-section" id="reference">
+        <header>Reference</header>
+        <li>All the documentation in this page is taken from <a id="CSS_link" target="_blank" href="https://www.w3schools.com/css/default.asp">CSS</a> 
+        </li>
+      </section>
+                  </div>
+                  </main>
+                  </div>
+    
+  </body>
+  </html>
